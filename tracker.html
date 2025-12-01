@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FitLife Hub - Progress Tracker</title>
+      <link rel="stylesheet" href="styles.css">
+      <!--
+         FitLife Hub - Progress Tracker
+         Filename: tracker.html
+         Author: Neehal Gill
+         Date: 11/11/2025
+      -->
+   </head>
+   <body>
+      <p class="skipnavigation">
+         <a href="#contentstart">Skip navigation</a>
+      </p>
+
+      <header class="site-header">
+         <h1>Progress Tracker</h1>
+         <p class="tagline">Track your workouts and meals</p>
+      </header>
+
+	  <nav class="main-nav" aria-label="Main navigation">
+
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="splits.html">Workout Splits</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="tracker.html" class="active">Progress Tracker</a></li>
+            <li><a href="sleep.html">Sleep Habits</a></li>
+         </ul>
+      </nav>
+
+      <main class="container">
+
+         <!-- workout log -->
+         <section>
+            <h2 id="contentstart">Weekly Workout Log</h2>
+            <p>Use this table to write down your main workout for each day.</p>
+
+            <table>
+               <thead>
+                  <tr>
+                     <th>Day</th>
+                     <th>Workout / Muscle Group</th>
+                     <th>Duration (min)</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr><td>Sunday</td><td></td><td></td></tr>
+                  <tr><td>Monday</td><td></td><td></td></tr>
+                  <tr><td>Tuesday</td><td></td><td></td></tr>
+                  <tr><td>Wednesday</td><td></td><td></td></tr>
+                  <tr><td>Thursday</td><td></td><td></td></tr>
+                  <tr><td>Friday</td><td></td><td></td></tr>
+                  <tr><td>Saturday</td><td></td><td></td></tr>
+               </tbody>
+            </table>
+         </section>
+
+         <!-- food log -->
+         <section>
+            <h3 style="margin-top: 2rem;"> Daily Food Log</h3>
+            <p>Use this table to record your meals and Macronutrients</p>
+
+            <table>
+               <thead>
+                  <tr>
+                     <th>Meal</th>
+                     <th>Food / Notes</th>
+                     <th>Estimated Macronutrients</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr><td>Breakfast</td><td></td><td></td></tr>
+                  <tr><td>Lunch</td><td></td><td></td></tr>
+                  <tr><td>Dinner</td><td></td><td></td></tr>
+                  <tr><td>Snacks</td><td></td><td></td></tr>
+               </tbody>
+            </table>
+         </section>
+
+         <!-- reflection -->
+         <section>
+            <h3 style="margin-top: 2rem;"> Daily Reflection</h3>
+            <p>Send Your Results To Yourself!</p>
+
+            <!-- Opens email with form content -->
+            <form action="mailto:" method="post" enctype="text/plain">
+               <fieldset>
+                  <legend>Quick Check-In</legend>
+
+                  <label for="day">Day of the Week:</label>
+                  <input type="text" id="day" name="Day">
+
+                  <label for="best">What Happened:</label>
+                  <textarea id="best" name="Best Part" rows="3"></textarea>
+
+                  <label for="improve">Notes or Comments:</label>
+                  <textarea id="improve" name="Improvement" rows="3"></textarea>
+
+                  <button type="submit">Send Reflection</button>
+               </fieldset>
+            </form>
+
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+               When you click "Send Reflection," your email program will open.  
+               Enter your own email address and press send.
+            </p>
+
+         </section>
+
+      </main>
+
+       <footer class="site-footer">
+         <div class="footer-inner">
+            <div class="footer-info">
+               <p><strong>Contact FitLife Hub</strong></p>
+               <p>Email: <a href="mailto:info@fitlife.com">info@fitlifehub.com</a></p>
+               <p>Phone: (617) 123-4567</p>
+               <p>Location: Boston, MA</p>
+            </div>
+            <div class="footer-image">
+               <!-- logo maybe -->
+               <img src="images/footerlogo.jpg" alt="FitLife Hub logo or fitness image">
+            </div>
+         </div>
+         <p class="footer-social">
+            Follow us:
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a> &bull;
+            <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+         </p>
+         <p>&copy; 2025 FitLife Hub. All rights reserved.</p>
+      </footer>
+   </body>
+</html>
